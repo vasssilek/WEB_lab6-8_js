@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu_style.css">
+    <script defer src="js/lab3.js"></script>
+
+    <title>Лабораторна робота №3 JS</title>
+</head>
+
+<body>
+<main class = "main">
+    <div class="strip"></div>
+    <header class = "header">
+        <h1>Лабораторні роботи з Javascript</h1>
+        <h2>Виконала студентка групи АнД-31
+            <br>Война Наталія</h2>
+    </header>
+    <hr color="#eda6a6">
+
+    <ul class = "menu-main">
+        <li><a href = "index.html">Лабораторна робота №1</a> </li>
+        <li><a href = "lab2.html">Лабораторна робота №2</a> </li>
+        <li><a href = "lab3.html">Лабораторна робота №3</a> </li>
+    </ul>
+
+    <h2>Завдання на лабораторну роботу</h2>
+    <div class="zavd">
+        Базовий клас: Зошит (поле: назва, кількість аркушів - k) <br>
+        Метод: Вартість: 15k <br>
+        Нащадок: Загальний (поле - матеріал обкладинки) <br>
+        Зміни в нащадках: Змінити вартість з урахуванням
+        надбавки за обкладинку на 50грн.
+    </div>
+
+    <div class="container">
+        <section class="filters">
+            <h3>Розрахунок вартості зошитів</h3>
+
+            <fieldset>
+                <legend>Зошит</legend>
+                Назва: <input value = "Звичайний" id="nbName" type="text"><br>
+                Кількість аркушів: <input value = "10" id="nbPages" type="number"><br>
+                Вартість: <span id="price_nb"></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Загальний зошит</legend>
+                Назва: <input value = "Для всього" id="gnName" type="text"><br>
+                Кількість аркушів: <input value = "20" id="gnPages" type="number"><br>
+                Матеріал обкладинки: <input value = "Шкіра" id="gnCover" type="text"><br>
+                Вартість: <span id="price_gnb"></span>
+            </fieldset>
+
+        </section>
+    </div>
+
+    <button class="button" onclick="notebookPriceCount()">Обчислити вартість</button>
+
+</main>
+</body>
+</html>

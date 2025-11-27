@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu_style.css">
+
+    <script defer src="js/lab2.js"></script>
+    <link rel="stylesheet" href="styles/lab2.css">
+
+    <title>Лабораторна робота №2 JS</title>
+</head>
+
+<body>
+<main class = "main">
+    <div class="strip"></div>
+    <header class = "header">
+        <h1>Лабораторні роботи з Javascript</h1>
+        <h2>Виконала студентка групи АнД-31
+            <br>Война Наталія</h2>
+    </header>
+    <hr color="#eda6a6">
+
+    <ul class = "menu-main">
+        <li><a href = "index.html">Лабораторна робота №1</a> </li>
+        <li><a href = "lab2.html">Лабораторна робота №2</a> </li>
+        <li><a href = "lab3.html">Лабораторна робота №3</a> </li>
+    </ul>
+
+    <h2>Завдання 1</h2>
+    <div class="zavd">
+        У формі є список фруктів та поле для введення їх вартості, <br>
+        після натискання Enter при введені вартості сформуйте список,
+        у якому зазначена назва фрукту та його вартість.
+    </div>
+
+    <div class="container">
+        <section class="filters">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Форма з фруктами</legend>
+
+                    <label>
+                        Оберіть фрукт:
+                        <select id="fruit_select">
+                            <option value="">-- Виберіть фрукт --</option>
+                            <option value="Яблуко">Яблуко</option>
+                            <option value="Банан">Банан</option>
+                            <option value="Апельсин">Апельсин</option>
+                            <option value="Ківі">Ківі</option>
+                            <option value="Груша">Груша</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Вартість (грн):
+                        <input id="fruit_price" type="text" onkeydown="addFruit(event)">
+                    </label>
+                </fieldset>
+            </form>
+
+            <div id="result_text"></div>
+        </section>
+    </div>
+
+
+    <h2>Завдання 2</h2>
+    <div class="zavd">
+        Дана таблиця з числами. При натисканні на кнопку в останній ряд
+        таблиці в кожну клітинку запишіть суму чисел в стовпці таблиці.
+    </div>
+
+    <div>
+        <table class="b-table" id="numbers_table">
+            <tr>
+                <td>-3.5</td>
+                <td>-5</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>-7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>8.5</td>
+                <td>1</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <button id="sum_btn" class="button">Обчислити суми</button>
+    </div>
+</main>
+
+</body>
+</html>

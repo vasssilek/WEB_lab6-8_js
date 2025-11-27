@@ -1,0 +1,20 @@
+.b-table {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-size: 14px;
+    width: 640px;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 10px;
+}
+
+.b-table td {
+    border: 1px solid #f36d85;
+    padding: 7px 17px;
+}
+
+.sum-button:hover {
+    background-color: #e08888;
+}
+
+
